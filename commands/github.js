@@ -6,7 +6,7 @@ const path = require('path');
 
 async function githubCommand(sock, chatId, message) {
   try {
-    const res = await fetch('https://api.github.com/repos/caseyweb/CASEYRHODES-XMD');
+    const res = await fetch('https://api.github.com/repos/caseyweb/JINX-XMD-V2.0');
     if (!res.ok) throw new Error('Error fetching repository data');
     const json = await res.json();
 
@@ -18,7 +18,7 @@ async function githubCommand(sock, chatId, message) {
     txt += `✩  *URL* : ${json.html_url}\n`;
     txt += `✩  *Forks* : ${json.forks_count}\n`;
     txt += `✩  *Stars* : ${json.stargazers_count}\n\n`;
-    txt += `💥 *JINX-XMD*`;
+    txt += `> ʀᴇɢᴀʀᴅs ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ 👻`;
 
     // Use the local asset image
     const imgPath = path.join(__dirname, '../assets/bot_image.jpg');
