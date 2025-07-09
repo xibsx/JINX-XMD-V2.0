@@ -185,7 +185,7 @@ async function songCommand(sock, chatId, message) {
         try {
             sentMsg = await sock.sendMessage(chatId, {
                 image: { url: result.result.thumbnail },
-                caption: `*${result.result.title}*\n\n> _Downloading your song..._\n > *_By CASEYRHODES-TECH_*`
+                caption: `*${result.result.title}*\n\n> _Downloading your song..._\n > *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴛᴇᴄʜ 👻*`
             }, { quoted: message });
         } catch (e) {
             // If thumbnail fails, fallback to just sending the audio
