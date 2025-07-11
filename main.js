@@ -99,7 +99,7 @@ const videoCommand = require('./commands/video');
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E";
+global.channelLink = "https://whatsapp.com/channel/0029VbAbwiL3AzNOpEoe5Y23";
 global.ytch = "Mr Caseyrhodes tech 👻";
 
 // Add this near the top of main.js with other global configurations
@@ -108,8 +108,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363302677217436@newsletter',
-            newsletterName: 'JINX-XMD',
+            newsletterJid: '120363398990126248@newsletter',
+            newsletterName: 'GIRAFFATITAN-XV',
             serverMessageId: -1
         }
     }
@@ -248,7 +248,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Check if message is from owner (fromMe) or bot itself
             if (!message.key.fromMe) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ This command is only available for the owner!',
+                    text: '❌ This command is only available for the owner! for more information check _*XIBS*_ @255754206718 GIRAFFATITAN-XV',
                     ...channelInfo
                 });
                 return;
@@ -773,7 +773,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
 
                     if (!groupJid.endsWith('@g.us')) {
                         return await sock.sendMessage(chatId, {
-                            text: "❌ This command can only be used in a group."
+                            text: "❌ This command can only be used in a group.for more information check ✔️ XIBS 255754206718"
                         });
                     }
 
@@ -805,7 +805,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
         // Only try to send error message if we have a valid chatId
         if (chatId) {
             await sock.sendMessage(chatId, {
-                text: '❌ Failed to process command!',
+                text: '❌ Failed to process command! for more information check ✔️ XIBS 255754206718',
                 ...channelInfo
             });
         }
@@ -846,7 +846,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
             const welcomeMessage = welcomeData?.message || 'Welcome {user} to the group! 🎉';
-            const channelId = welcomeData?.channelId || '120363302677217436@newsletter';
+            const channelId = welcomeData?.channelId || '120363398990126248@newsletter';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
@@ -864,7 +864,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'JINX-XMD',
+                            newsletterName: 'GIRAFFATITAN-XV',
                             serverMessageId: -1
                         }
                     }
@@ -886,7 +886,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
             const goodbyeMessage = goodbyeData?.message || 'Goodbye {user} 👋';
-            const channelId = goodbyeData?.channelId || '120363302677217436@newsletter';
+            const channelId = goodbyeData?.channelId || '120363398990126248@newsletter';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
@@ -903,7 +903,7 @@ async function handleGroupParticipantUpdate(sock, update) {
                         isForwarded: true,
                         forwardedNewsletterMessageInfo: {
                             newsletterJid: channelId,
-                            newsletterName: 'JINX-XMD',
+                            newsletterName: 'GIRAFFATITAN-XV',
                             serverMessageId: -1
                         }
                     }
