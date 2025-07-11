@@ -100,7 +100,7 @@ const videoCommand = require('./commands/video');
 global.packname = settings.packname;
 global.author = settings.author;
 global.channelLink = "https://whatsapp.com/channel/0029VbAbwiL3AzNOpEoe5Y23";
-global.ytch = "Mr Caseyrhodes tech 👻";
+global.ytch = DIGITAL LIFE ";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -163,7 +163,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Only respond occasionally to avoid spam
             if (Math.random() < 0.1) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ You are banned from using the bot. Contact an admin to get unbanned.',
+                    text: '❌ You are banned from using the bot. Contact an admin to get unbanned for more information check ✔️ XIBS 255754206718 GIRAFFATITAN-XV.',
                     ...channelInfo
                 });
             }
@@ -248,7 +248,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Check if message is from owner (fromMe) or bot itself
             if (!message.key.fromMe) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ This command is only available for the owner! for more information check _*XIBS*_ @255754206718 GIRAFFATITAN-XV',
+                    text: '❌ This command is only available for the owner! for more information check _*XIBS*_ 255754206718 GIRAFFATITAN-XV',
                     ...channelInfo
                 });
                 return;
