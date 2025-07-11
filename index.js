@@ -80,11 +80,11 @@ const store = {
     }
 }
 
-let phoneNumber = "254112192119"
+let phoneNumber = "255754206718"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "JINX-XMD BOT"
-global.themeemoji = "•"
+global.botname = "GIRAFFATITAN-XV"
+global.themeemoji = "🏄"
 
 const settings = require('./settings')
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -149,13 +149,13 @@ async function startXeonBotInc() {
                 // Only try to send error message if we have a valid chatId
                 if (mek.key && mek.key.remoteJid) {
                     await XeonBotInc.sendMessage(mek.key.remoteJid, { 
-                        text: '❌ An error occurred while processing your message.',
+                        text: '❌ An error occurred while processing your message for more information check ✔️ XIBS 255754206718 GIRAFFATITAN-XV.',
                         contextInfo: {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363302677217436@newsletter',
-                                newsletterName: 'JINX-XMD',
+                                newsletterJid: '120363398990126248@newsletter',
+                                newsletterName: 'GIRAFFATITAN-XV',
                                 serverMessageId: -1
                             }
                         }
@@ -254,8 +254,8 @@ async function startXeonBotInc() {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363302677217436@newsletter',
-                        newsletterName: 'JINX-XMD',
+                        newsletterJid: '120363398990126248@newsletter',
+                        newsletterName: 'GIRAFFATITAN-XV',
                         serverMessageId: -1
                     }
                 }
